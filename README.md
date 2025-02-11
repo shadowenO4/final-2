@@ -16,6 +16,9 @@ This is a travel planning app that integrates with Geonames, Weatherbit, and Pix
 ## Testing
 Run `npm test` to execute Jest tests.
 
+## Node.js Version
+- This project requires Node.js version 18 or higher.
+
 ## Dependencies
 - Express
 - Webpack
