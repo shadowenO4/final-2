@@ -16,7 +16,7 @@ The app is built using modern web technologies:
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/shadowenO4/final-3.git
+   git clone https://github.com/shadowenO4/final-2.git
    cd travel-app
    ```
 
