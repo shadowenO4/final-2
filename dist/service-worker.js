@@ -79,10 +79,13 @@ define(['./workbox-e833d894'], (function (workbox) { 'use strict';
    */
   workbox.precacheAndRoute([{
     "url": "bundle.js",
-    "revision": "11a50da0be155766ac2ac885f7223d2e"
+    "revision": "576f53bf5df2df645146b00fad8f99ea"
+  }, {
+    "url": "favicon.ico",
+    "revision": "d41d8cd98f00b204e9800998ecf8427e"
   }, {
     "url": "index.html",
-    "revision": "2a69935b0479910d6c3820ceccf1d066"
+    "revision": "59ff840868f03931ba0a6186f24919c5"
   }], {});
 
 }));

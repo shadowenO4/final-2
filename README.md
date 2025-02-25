@@ -80,7 +80,19 @@ The app is built using modern web technologies:
    - Weather: Daily forecasts for the selected period
    - Images: 10 high-quality photos of Paris
 
+## Starting the Project
+1. Start the server:
+   ```bash
+   node src/server/server.js
+   ```
+2. Start the client application:
+   ```bash
+   npm run dev
+   ```
+3. Access the app at `http://localhost:8083`
+
 ## Troubleshooting
+
 ### Common Issues
 1. **API Keys Not Working**
    - Verify keys are correctly set in `.env`

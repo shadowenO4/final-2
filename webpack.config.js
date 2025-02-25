@@ -1,5 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin'); // Import CopyWebpackPlugin
+
 const WorkboxPlugin = require('workbox-webpack-plugin');
 
 module.exports = {
@@ -13,6 +15,10 @@ module.exports = {
   devServer: {
     static: './dist',
     hot: true,
+    port: 8080, // Specify the port for the dev server
+    client: {
+      webSocketURL: 'ws://localhost:8083/ws',
+    },
   },
   module: {
     rules: [
@@ -30,6 +36,11 @@ module.exports = {
     ],
   },
   plugins: [
+    new CopyWebpackPlugin({ // Add CopyWebpackPlugin to the plugins array
+      patterns: [
+        { from: 'src/client/views/favicon.ico', to: 'favicon.ico' }, // Copy favicon.ico to dist
+      ],
+    }),
     new HtmlWebpackPlugin({
       template: './src/client/views/index.html',
       filename: 'index.html',
