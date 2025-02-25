@@ -37,7 +37,7 @@ app.get('/api', async (req, res) => {
 
 
     const location = req.query.location; // Get location from query parameters
-    const googlesURL = `https://maps.googleapis.com/maps/api/geocode/json?address=${location}&key=AIzaSyA6r8l0tEMxGB0IA6MD2ropPuIiR07qfxc`; 
+    const googlesURL = `https://maps.googleapis.com/maps/api/geocode/json?address=${location}&key=YOUR_API`; 
 
 
     try {
