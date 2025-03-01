@@ -1,14 +1,18 @@
 export const updateUI = async (location, startDate, endDate) => {
     // Store the trip data in localStorage
     localStorage.setItem('tripData', JSON.stringify({ location, startDate, endDate }));
+const user = 'shadoweo';
 
-    const location = location.trim();
+const num = 4
+const USERNAME= user.concat(num);
+    const trimmedLocation = location.trim();
+
 
     console.log('Location:', location);
     console.log('Start Date:', startDate);
     console.log('End Date:', endDate);
 
-    const geonamesURL = `http://api.geonames.org/searchJSON?q=${location}&maxRows=1&username=shadoweno4`;
+    const geonamesURL = `http://api.geonames.org/searchJSON?q=${location}&maxRows=1&username=${USERNAME}`;
     const weatherbitURL = `https://api.weatherbit.io/v2.0/forecast/daily?city=${location}&key=467725c69eb744ceafa81c00b8f0a55c`;
     const pixabayURL = `https://pixabay.com/api/?q=${location}&key=49042350-06ebdbdfbfdd05f84191284e8`;
 

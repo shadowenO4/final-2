@@ -9,7 +9,9 @@
         "start": "node src/server/server.js",
         "build": "webpack --config webpack.config.js",
         "test": "jest",
-        "dev": "webpack serve --config webpack.config.js"
+        "dev": "webpack serve --config webpack.config.js",
+        "lint": "eslint ."
+
     },
     "dependencies": {
         "ansi-html-community": "^0.0.8",
